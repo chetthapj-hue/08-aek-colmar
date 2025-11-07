@@ -31,46 +31,230 @@
 			Welcome to <br class="md:hidden" />Colmar Academy
 		</h1> -->
     <!-- Mobil -->
-    <header class="bg-slate-300">
-      <nav>
-        <div class="md:hidden flex justify-evenly items-center">
-          <img src="images/ic-logo.svg" alt="logo" />
+    <heade>
+      <nav class=" h-16 md:hidden flex justify-evenly items-center cursor-pointer ">
+    	  <img src="images/ic-logo.svg" alt="logo" />
           <img src="images/ic-on-campus.svg" alt="on-campus" />
           <img src="images/ic-online.svg" alt="online" />
-          <img src="images/ic-login.svg" alt="lohin" />
-        </div>
+          <img src="images/ic-login.svg" alt="login" />
       </nav>
       <!-- desktop -->
-      <nav class="justify-between hidden md:flex">
+      <nav class="hidden h-16 md:flex justify-between">
         <div class="flex items-center">
           <img src="images/ic-logo.svg" alt="logo" class="w-8 h-8" />
-          <span class="font-medium">COLMAR</span>
-          <span class="font-light">ACADEMY</span>
+         <h1>
+			 <span class="font-medium">COLMAR</span>
+          <span class="font-light ">ACADEMY</span>
+		 </h1>
         </div>
-        <div class="gap-4 flex items-center mr-6">
-          <a href="#">On campus</a>
+        <div class="gap-4 flex items-center mr-6 cursor-pointer">
+          <a class="hover:bg-red-500" href="#">On campus</a>
           <a href="#">online</a>
-          <a href="#">or companies</a>
+          <a href="#">for companies</a>
           <a href="#">Sing in</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="bg-gray-200">
+    <main class="hidden md:flex flex-col">
+      <section class="hero">
 		<!-- mobil -->
-        <div class="md:hidden">
+        <div class= "md:hidden bg-gray-200 text-left font-sans">
           <div>
-            <img src="images/banner.jpg" alt="" />
+            <img src="images/banner.jpg" alt="" class="w-full" />
           </div>
-          <div>
-            <h1 class="#">Learn something new everyday</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button><a href="#">Start here</a></button>
+          <div class="p-8 space-y-6">
+            <h1 class="text-3xl font-bold leading-tight">Learn something<br/>
+			<span class="font-bold">new everyday</span>
+		    </h1>
+            <p class="text-gray-600 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="bg-gray-400 text-white font-semibold px-6 py-3 rounded w-full"><a href="#">Start here</a></button>
           </div>
-        </div>
-		<!-- desktop -->
+         </div>
+		 <!-- desktop -->
+		 <div class="hidden w-3/5 md:flex bg-gray-200">
+		 <div>
+			<img src="images/banner.jpg" alt="" class="w-full h-full object-cover">
+		 </div>
+		 </div>
+	        <div class="w-2/5">	 <div class=" flex flex-col justify-center p-8">
+			<h1 class="text-3xl font-bold mb-6 leading-tight ">Learn something <br/>
+				new everyday</h1>
+			<p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<button class="bg-gray-600 text-white px-8 py-2 rounded hover:bg-gray-700 transition w-fit">Start here</button>
+		       </div>
+			</div>
       </section>
-	  
+	  <section class="information">
+		<!-- Mobil -->
+		 <div class="md:hidden">
+			<div>
+				<div>
+					<img src="images/information-orientation-mobile.jpg" alt=""></div>
+		        <div>
+			      <h1>Orientation data</h1>
+			       <p>tue 10/11 & wed 10/12: 8am-3pm</p>
+			        <a href="#">Read more</a>
+		        </div>
+		    </div>
+		 <div>
+			<img src="images/information-campus-mobile.jpg" alt="">
+			<h1>Our campus</h1>
+			<p>Find which campus is close by you</p>
+			<a href="#">Read more</a>
+		 </div>
+		 <div>
+			<img src="images/information-guest-lecture-mobile.jpg" alt="">
+			<h1>Special guest lecture</h1>
+			<p>Join a keynote with Oliver Sack about</p>
+			<p>music in medical treatment</p>
+			<a href="#">Read more</a>
+		 </div>
+		 </div>
+<!-- desktop -->
+ <div class="hidden md:flex">
+<div>
+	<div>
+    <img src="images/information-main.jpg" alt="">
+	<h1>It doesn't hurt to keep practicing</h1>
+	<p>Curabitur vitae libero in ipsum porttitor consequt.Aliquam et commodo lectus,nec consequat.Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula</p>
+	<p>Emanuel, Sr Strategist at Hiring.com</p>
+	</div>
+</div>
+<div>
+	<div>
+		<div><img src="images/information-orientation.jpg" alt=""></div>
+		<div>
+			 <h1>Orientation data</h1>
+			  <p>tue 10/11 & wed 10/12: 8am-3pm</p>
+			  <a href="#">Read more</a>
+		</div>
+	</div>
+	<div>
+		 <div><img src="images/information-campus.jpg" alt=""></div>
+		 <h1>Our campus</h1>
+			<p>Find which campus is close by you</p>
+			<a href="#">Read more</a>
+	</div>
+	<div>
+		<img src="images/information-guest-lecture.jpg" alt="">
+		<h1>Our guest lecture</h1>
+		<p>join a keynote with Olive sack</p>
+		<p>about music in medical</p>
+		<a href="#">read more</a>
+	</div>
+</div>
+</div>
+</section>
+<section class="course">
+	<!-- mobile -->
+	 <div class="md:hidden">
+		<div><h1>Start Learning</h1></div>
+		<div><a href="#">Software engineering</a></div>
+		<div><a href="#">Computer art</a></div>
+		<div><a href="#">Design</a></div>
+		<div><a href="#">Data</a></div>
+		<div><a href="#">Business</a></div>
+		<div><a href="#">Markrting</a></div>
+	 </div>
+	 <!-- desktop -->
+	 <div>
+		<div><h1>Statr learning</h1></div>
+	 </div>
+	 <div class="hidden md:flex">
+		<div>
+			<img src="images/course-software.jpg" alt="">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<img src="images/course-computer-art.jpg" alt="">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<img src="images/course-design.jpg" alt="">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<img src="images/course-data.jpg" alt="">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<img src="images/course-business.jpg" alt="">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<img src="images/course-marketing.jpg" alt="">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</div>
+	 </div>
+</section>
+<section class="thesis">
+	<!-- mobile -->
+	<div class="md:hidden">
+		<div>
+		<h1>Thesis exhibits</h1>
+	</div>
+	<div>
+		<video src="videos/thesis.mp4"></video>
+	</div>
+	</div>
+	<!-- desktop -->
+	 <div class="hidden md:flex">
+		<div>
+			<h1>Thesis exhibit</h1>
+		</div>
+		<div>
+			<div>
+				<video src="videos/thesis.mp4"></video>
+				<h1></h1>
+				<p></p>
+			</div>
+			<div>
+				<div>
+					<div><img src="images/thesis-fisma.jpg" alt=""></div>
+					<div>
+						<p>Fisma: Design and Prototype</p>
+						<p>designer showcase of new prototype product</p>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/thesis-now-and-then.jpg" alt="">
+					</div>
+					<div><p>Now and then</p>
+					     <p>Research study about New York</p>
+				    </div>
+				</div>
+			</div>
+		</div>
+	 </div>
+</section>
     </main>
+	<footer>
+		<!-- m -->
+		 <div class="md:hidden">
+			<div><p>2016 Comar Acardemy: All rights reserved</p></div>
+		 </div>
+		<!-- d -->
+		 <div class="hidden md:flex">
+			<div>
+				<p>2016 Comar Acardemy: All rights reserved</p>
+			</div>
+		    <div>
+			<p>Terms Privacy</p>
+		    </div>
+	     </div>
+	</footer>
   </body>
 </html>
